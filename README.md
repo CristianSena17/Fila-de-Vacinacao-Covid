@@ -19,7 +19,7 @@ A remoção sempre acontece no primeiro da fila, como uma fila comum.
 Durante o desenvolvimento foram elaborados dois projetos, um com **Fila Dinâmica Encadeada** e outro com **Fila Estática por vetor**. Ambos os projetos estão disponíveis em suas respectivas pastas neste repositório.
 <br>Para o desenvolvimento da 
 <br>Para o desenvolvimento da **Fila Dinâmica Encadeada** foi utilizado o seguinte modelo:
-```
+```c
 #ifndef  FILADINAMICA_H
 #define  FILADINAMICA_H
 //========================================
@@ -67,7 +67,7 @@ Pessoa dequeue(Fila *f);
 #endif 
 ```
 Já para o desenvolvimento da **Fila Estática por vetor** foi utilizado o seguinte modelo:
-```
+```c
 #ifndef  FILAESTATICA_H
 #define  FILAESTATICA_H
 //========================================
