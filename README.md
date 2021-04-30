@@ -12,13 +12,14 @@ O projeto consiste em um sistema de fila para vacinação conta covid-19. Atrav�
 | 2ª fase | Pessoas de 60 a 74 anos.                          |
 | 3ª fase | Pessoas com comorbidades.                         |
 | 4ª fase | Professores, forças de segurança, etc..           |
+
 <br>A remoção sempre acontece no primeiro da fila, como uma fila comum.
 
 # Desenvolvimento
 Durante o desenvolvimento foram elaborados dois projetos, um com **Fila Dinâmica Encadeada** e outro com **Fila Estática por vetor**. Ambos os projetos estão disponíveis em suas respectivas pastas neste repositório.
 <br>Para o desenvolvimento da 
 <br>Para o desenvolvimento da **Fila Dinâmica Encadeada** foi utilizado o seguinte modelo:
-'''
+```
 #ifndef  FILADINAMICA_H
 #define  FILADINAMICA_H
 //========================================
@@ -64,9 +65,9 @@ int size_fila(Fila *f);
 Pessoa dequeue(Fila *f);
 //========================================
 #endif 
-'''
+```
 <br>Já para o desenvolvimento da **Fila Estática por vetor** foi utilizado o seguinte modelo:
-'''
+```
 #ifndef  FILAESTATICA_H
 #define  FILAESTATICA_H
 //========================================
@@ -106,6 +107,6 @@ int size_fila(Fila *f);
 Pessoa dequeue(Fila *f);
 //========================================
 #endif
-'''
+```
 Observe que os dois códigos apresentam poucas diferenças, o que demonstra que a **Fila Dinâmica Encadeada** e a **Fila Estática por vetor** possuem comportamentos parecidos.
 # Conclusão
