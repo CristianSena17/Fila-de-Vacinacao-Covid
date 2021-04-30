@@ -110,9 +110,9 @@ Pessoa dequeue(Fila *f);
 //========================================
 #endif
 ```
-Observe que os dois códigos apresentam poucas diferenças, o que demonstra que a **Fila Dinâmica Encadeada** e a **Fila Estática por vetor** possuem comportamentos parecidos, sendo que a maior diferença esta na maneira de implementação.
+Observe que os dois códigos apresentam poucas diferenças, o que demonstra que a **Fila Dinâmica Encadeada** e a **Fila Estática por vetor** possuem comportamentos parecidos, sendo que a maior diferença está na maneira de implementação.
 
-A **Fila Dinâmica Encadeada** necessita de uma struct Celula, o que não é obrigatório na **Fila Estática por vetor**, mas a **Fila Estática por vetor** necessita realizar movimentações no elementos do vetor sempre que um elementos é retirado ou adicionado, ao menos que ele seja adicionado no final. Já na **Fila Dinâmica Encadeada** uma simples alteração em ponteiros resolve o problema para adição ou remoção de qualquer elemento.
+A **Fila Dinâmica Encadeada** necessita de uma struct Celula, o que não é obrigatório na **Fila Estática por vetor**, mas a **Fila Estática por vetor** necessita realizar movimentações nos elementos do vetor sempre que um elemento é retirado ou adicionado, ao menos que ele seja adicionado no final. Já na **Fila Dinâmica Encadeada** uma simples alteração em ponteiros resolve o problema para adição ou remoção de qualquer elemento.
 # Interação com o Usuário 
 Abaixo seguem os menus de interação com o usuário, se pode observar que eles possuem um funcionamento simples e objetivo, evitando que usuários leigos fiquem perdidos em meio a muitas opções.
 
