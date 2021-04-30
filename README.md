@@ -115,7 +115,8 @@ Observe que os dois códigos apresentam poucas diferenças, o que demonstra que 
 A **Fila Dinâmica Encadeada** necessita de uma struct Celula, o que não é obrigatório na **Fila Estática por vetor**, mas a **Fila Estática por vetor** necessita realizar movimentações no elementos do vetor sempre que um elementos é retirado ou adicionado, ao menos que ele seja adicionado no final. Já na **Fila Dinâmica Encadeada** uma simples alteração em ponteiros resolve o problema para adição ou remoção de qualquer elemento.
 # Interação com o usuário 
 Abaixo seguem os menus de interação com o usuário, se pode observar que eles possuem um funcionamento simples e objetivo, evitando que usuários leigos fiquem perdidos em meio a muitas opções.
-<br>**Menu Principal**
+
+**Menu Principal**
 ```
 -------> SISTEMA DE FILA DE VACINACAO <------
 --------------Escolha uma opcao--------------
