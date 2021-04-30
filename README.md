@@ -13,7 +13,7 @@ O projeto consiste em um sistema de fila para vacinação conta covid-19. Atrav�
 | 3ª fase | Pessoas com comorbidades.                         |
 | 4ª fase | Professores, forças de segurança, etc..           |
 
-A remoção sempre acontece no primeiro da fila, como uma fila comum.
+A remoção sempre acontece no primeiro da fila, como em uma fila comum.
 
 # Desenvolvimento
 Durante o desenvolvimento foram elaborados dois projetos, um com **Fila Dinâmica Encadeada** e outro com **Fila Estática por vetor**. Ambos os projetos estão disponíveis em suas respectivas pastas neste repositório.
@@ -108,5 +108,24 @@ Pessoa dequeue(Fila *f);
 //========================================
 #endif
 ```
-Observe que os dois códigos apresentam poucas diferenças, o que demonstra que a **Fila Dinâmica Encadeada** e a **Fila Estática por vetor** possuem comportamentos parecidos.
+Observe que os dois códigos apresentam poucas diferenças, o que demonstra que a **Fila Dinâmica Encadeada** e a **Fila Estática por vetor** possuem comportamentos parecidos, sendo que a maior diferença esta na maneira de implementação.
+<br>A **Fila Dinâmica Encadeada** necessita de uma struct Celula, o que não é obrigatório na **Fila Estática por vetor**, mas a **Fila Estática por vetor** necessita realizar movimentações no elementos do vetor sempre que um elementos é retirado ou adicionado, ao menos que ele seja adicionado no final. Já na **Fila Dinâmica Encadeada** uma simples alteração em ponteiros resolve o problema para adição ou remoção de qualquer elemento.
+# Interação com o usuário 
+Abaixo seguem os menus de interação com o usuário, se pode observar que eles possuem um funcionamento simples e objetivo, evitando que usuários leigos fiquem perdidos em meio a muitas opções.
+<br>**Menu Principal**
+```
+-------> SISTEMA DE FILA DE VACINACAO <------
+--------------Escolha uma opcao--------------
+1 - Inserir uma pessoa na fila
+2 - Retirar uma pessoa da fila
+3 - Exibir a fila
+4 - Exibir a fila de uma fase especifica
+5 - Verificar o tamanho da fila
+0 - Sair
+Digite a opcao desejada:
+```
+**Menu de Cadastro**
+**Menu de Opções de Filtragem**
+
 # Conclusão
+
