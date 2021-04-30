@@ -1,7 +1,7 @@
 # Fila de Vacinação - Covid
 Trabalho desenvolvido na disciplina de **AED2 2021/2**
 **Engenharia de Computação** - PUC Minas COREU
-**Aluno:** Cristian Fernandes Sena
+<br>**Aluno:** Cristian Fernandes Sena
 # Introdução
 O projeto consiste em um sistema de fila para vacinação conta covid-19. Através de um menu, o sistema possibilita a inserção de pessoas na fila, impressão de dados, impressão filtrada e remoção de pessoas da fila.
 <br>O sistema lê os dados do usuário e o ordena automaticamente na fila de acordo com sua fase. Cada fase corresponde a um grupo prioritário. 
@@ -124,8 +124,14 @@ Abaixo seguem os menus de interação com o usuário, se pode observar que eles 
 0 - Sair
 Digite a opcao desejada:
 ```
-**Menu de Cadastro**
 **Menu de Opções de Filtragem**
-
+```
+------Informe a fase que deseja imprimir:-----
+1: Trabalhadores de Saúde, pessoas acima de 75 anos.
+2: Pessoas de 60 a 74 anos.
+3: Pessoas com comorbidades.
+4: Professores, forças de segurança, etc..
+5: Pessoas nao prioritarias.
+```
 # Conclusão
-
+Este projeto simplificou o desenvolvimento e entendimento de filas encadeadas e filas estáticas, o que abre portas para novos projetos com diferentes tipos de TADs e futuras melhorias e implementações no projeto em questão.
