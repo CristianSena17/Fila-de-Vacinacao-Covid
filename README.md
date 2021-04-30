@@ -5,7 +5,7 @@ Trabalho desenvolvido na disciplina de **AED2 2021/2**
 # Introdução
 O projeto consiste em um sistema de fila para vacinação conta covid-19. Através de um menu, o sistema possibilita a inserção de pessoas na fila, impressão de dados, impressão filtrada e remoção de pessoas da fila.
 <p>O sistema lê os dados do usuário e o ordena automaticamente na fila de acordo com sua fase. Cada fase corresponde a um grupo prioritário.</p>
-<br>Abaixo segue a tabela com a especificação de cada grupo prioritário:
+<p>Abaixo segue a tabela com a especificação de cada grupo prioritário:</p>
 |   Fase  |                   Especificação                   |
 |:-------:|:-------------------------------------------------:|
 | 1ª fase | Trabalhadores de Saúde, pessoas acima de 75 anos. |
@@ -17,8 +17,7 @@ A remoção sempre acontece no primeiro da fila, como em uma fila comum.
 
 # Desenvolvimento
 Durante o desenvolvimento foram elaborados dois projetos, um com **Fila Dinâmica Encadeada** e outro com **Fila Estática por vetor**. Ambos os projetos estão disponíveis em suas respectivas pastas neste repositório.
-<br>Para o desenvolvimento da 
-<br>Para o desenvolvimento da **Fila Dinâmica Encadeada** foi utilizado o seguinte modelo:
+<p>Para o desenvolvimento da **Fila Dinâmica Encadeada** foi utilizado o seguinte modelo:</p>
 ```c
 #ifndef  FILADINAMICA_H
 #define  FILADINAMICA_H
@@ -109,7 +108,7 @@ Pessoa dequeue(Fila *f);
 #endif
 ```
 Observe que os dois códigos apresentam poucas diferenças, o que demonstra que a **Fila Dinâmica Encadeada** e a **Fila Estática por vetor** possuem comportamentos parecidos, sendo que a maior diferença esta na maneira de implementação.
-<br>A **Fila Dinâmica Encadeada** necessita de uma struct Celula, o que não é obrigatório na **Fila Estática por vetor**, mas a **Fila Estática por vetor** necessita realizar movimentações no elementos do vetor sempre que um elementos é retirado ou adicionado, ao menos que ele seja adicionado no final. Já na **Fila Dinâmica Encadeada** uma simples alteração em ponteiros resolve o problema para adição ou remoção de qualquer elemento.
+<p>A **Fila Dinâmica Encadeada** necessita de uma struct Celula, o que não é obrigatório na **Fila Estática por vetor**, mas a **Fila Estática por vetor** necessita realizar movimentações no elementos do vetor sempre que um elementos é retirado ou adicionado, ao menos que ele seja adicionado no final. Já na **Fila Dinâmica Encadeada** uma simples alteração em ponteiros resolve o problema para adição ou remoção de qualquer elemento.</p>
 # Interação com o usuário 
 Abaixo seguem os menus de interação com o usuário, se pode observar que eles possuem um funcionamento simples e objetivo, evitando que usuários leigos fiquem perdidos em meio a muitas opções.
 <br>**Menu Principal**
@@ -134,4 +133,5 @@ Digite a opcao desejada:
 5: Pessoas nao prioritarias.
 ```
 # Conclusão
-Este projeto simplificou o desenvolvimento e entendimento de filas encadeadas e filas estáticas, o que abre portas para novos projetos com diferentes tipos de TADs e futuras melhorias e implementações no projeto em questão.
+Com base no que foi desenvolvido, pode-se afirmar que, neste caso, a **Fila Dinâmica Encadeada** se mostrou mais eficiente por não realizar operações de movimentação de seus elementos, o que é bem custoso em uma grande fila.
+<p>Este projeto simplificou o desenvolvimento e entendimento de filas encadeadas e filas estáticas, o que abre portas para novos projetos com diferentes tipos de TADs e futuras melhorias e implementações no projeto em questão.</p>
